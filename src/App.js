@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import CodeEditor from './CodeEditor/CodeEditor';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <>
+      <nav className="nav-bar">
+        <h1>CodePen</h1>
+
+        <a href="https://github.com/ujjwal404">
+          <img
+            src="https://www.svgrepo.com/show/303615/github-icon-1-logo.svg"
+            alt="github"
+            className="icon"
+          />
         </a>
-      </header>
-    </div>
+      </nav>
+      <div>
+        <CodeEditor />
+      </div>
+    </>
   );
 }
 
